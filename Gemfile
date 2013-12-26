@@ -9,7 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'devise'
 gem 'foundation-rails'
-gem 'mongoid', '~> 4', :github=>"mongoid/mongoid"
+gem 'mongoid', :github=>"mongoid/mongoid"
 gem 'simple_form'
 group :development do
   gem 'better_errors'
