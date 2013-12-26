@@ -12,6 +12,7 @@ gem 'foundation-rails'
 gem 'simple_form'
 gem 'mongoid', :github=>"mongoid/mongoid"
 
+gem "reveal-js-rails", "~> 0.0.1"
 
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem 'aws-sdk', '~> 1.3.4'

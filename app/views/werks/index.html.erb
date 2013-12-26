@@ -1,7 +1,3 @@
-
-
-<%= link_to 'New Werk', new_werk_path %>
-<br>
 <div class="reveal">
   <div class="slides">
     <% @werks.each do |werk| %>
@@ -11,12 +7,7 @@
           <h2><%=werk.name%></h2>
           <%=werk.info%>
         </figcaption>
-        <ul>
-          <li><%= link_to 'Show', werk %></li>
-          <li><%= link_to 'Edit', edit_werk_path(werk) %></li>
-          <li><%= link_to 'Destroy', werk, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-        </ul>
-      <section>
+      </section>
     <% end %>
   </div>
 </div>
