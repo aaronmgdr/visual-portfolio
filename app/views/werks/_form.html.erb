@@ -10,10 +10,20 @@
       </ul>
     </div>
   <% end %>
-
-  <%= f.text_field :name %>
-  <%= f.text_field :url %>
-  <%= f.text_area :info, size: "60x12" %>
+  <ul>
+    <li>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </li>
+    <li>
+      <%= f.label :url %>
+      <%= f.url_field :url %>
+    </li>      
+    <li>
+      <%= f.label "any other information" %>
+      <%= f.text_area :info, size: "60x12" %>
+    </li>
+  </ul>      
 
   <div class="actions">
     <%= f.submit %>
