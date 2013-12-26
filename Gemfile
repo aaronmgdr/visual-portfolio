@@ -9,8 +9,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'devise'
 gem 'foundation-rails'
-gem 'mongoid', :github=>"mongoid/mongoid"
 gem 'simple_form'
+gem 'mongoid', :github=>"mongoid/mongoid"
+
+
+gem "mongoid-paperclip", :require => "mongoid_paperclip"
+gem 'aws-sdk', '~> 1.3.4'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]

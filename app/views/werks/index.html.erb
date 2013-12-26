@@ -1,0 +1,31 @@
+<h1>Listing werks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @werks.each do |werk| %>
+
+      <figure><%= image_tag werk.url %></figure>
+      <figcaption> 
+        <h2><%=werk.name%></h2>
+        <%=werk.info%>
+      </figcaption>
+      <tr>
+        <td><%= link_to 'Show', werk %></td>
+        <td><%= link_to 'Edit', edit_werk_path(werk) %></td>
+        <td><%= link_to 'Destroy', werk, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Werk', new_werk_path %>
